@@ -18,22 +18,24 @@ p {
 }
 h1 {
     font-size: 15vw;
+    text-align: center;
+    margin: 1%;
 }
 h5 {
     color: gray;
 }
-.Registrierung {
+.haupt {
     height: 92vh;
 }
-.Registrierung p {
+.haupt p {
     display: flex;
 }
-.Registrierung p label {
+.haupt p label {
     width: 50%;
     text-align: right;
     padding-right: 10px;
 }
-.Registrierung p input {
+.haupt p input {
 }
 footer {
     padding-left: 1%;
@@ -67,8 +69,8 @@ Nav, mobile
 }
 
 #burger-icon div {
-    width: 30px;
-    height: 5px;
+    width: 60px;
+    height: 10px;
     border-radius:;
     background-color: rgba(150, 160, 170);
     margin: 3px;
