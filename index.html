@@ -1,115 +1,279 @@
 <!DOCTYPE html>
 <html lang="de">
-<html>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <head>
-        <title>Übung 3</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                font-family: sans-serif;
-                color: lawngreen;
-                
-            }
-            p {
-                padding: 0,5%;
-                align-items: stretch;
-                align-content: center;
-            }
-            h1 {
-                font-size: 15vw;
-            }
-            h5 {
-                color: blue;
-            }
-            .Registrierung {
-                height: 92vh;
-            }
-            .Registrierung p {
-                display: flex;
-            }
-            .Registrierung p label {
-                width: 50%;
-                text-align: right;
-                padding-right: 10px;
-            }
-            .Registrierung p input {
-                
-            }
-            footer {
-                padding: 1%;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="Registrierung">
-            <header>
-                <h1>Registrierung</h1>
-            </header>
-            <form class="form" method="get">
-            <p>
-                <label for="Nachname">Nachname:</label>
-                <input type="text" id="nname" name="Nachname" required />
-            </p>
-            <p>
-                <label for="Vorname">Vorname:</label>
-                <input type="text" id="vname" name="Vorname" required />
-            </p>
-            <p>
-                <label for="Benutzername">Benutzername:</label>
-                <input type="text" id="bname" name="Benutzername" required />
-            </p>
-            <p>
-                <label for="E-Mail">E-Mail:</label>
-                <input type="text" id="email" name="E-Mail" required />
-            </p>
-            <p>
-                <label for="Passwort">Passwort:</label>
-                <input type="password" id="passwort" name="Passwort" required />
-            </p>
-            <p>
-                <label for="Wiederholung Passwort"
-                    >Wiederholung Passwort:</label
-                >
-                <input
-                    type="password"
-                    id="passwortw"
-                    name="Passwort"
-                    required
-                />
-            </p>
-            <p>
-                <label for="AGB"
-                    >Bestätigen Sie den Verkauf Ihrer Seele! (AGB)</label
-                >
-                <input type="checkbox" name="Datenschutz" value="accept" />
-            </p>
-            <p>
-                <label for="Datenschutz"
-                    >Ihre Seele wird durch die DSGVO beschützt (etwas).
-                    Bestätigen Sie! (Datenschutz)</label
-                >
-                <input type="checkbox" name="Datenschutz" value="accept" />
-            </p>
-            <p>
-                <label for="Bestaetigung"
-                    >Seele nun verkaufen, 100% GRATIS!</label
-                >
-                <input
-                    type="submit"
-                    name="Seele nun verkaufen"
-                    value="Akzeptieren"
-                    href="login.html"
-                />
-            </p>
-            </form>
-        </div>
-        <footer>
-            <h5>&copy Seelenschlachter GmbH 2019</h5>
-        </footer>
-    </body>
+    <html>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <head>
+            <title>Übung 3</title>
+            <style>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                            body {
+                                font-family: sans-serif;
+                                color: lawngreen;
+
+                            }
+                            p {
+                                padding: 0,5%;
+                                align-items: stretch;
+                                align-content: center;
+                            }
+                            h1 {
+                                font-size: 15vw;
+                            }
+                            h5 {
+                                color: blue;
+                            }
+                            .Registrierung {
+                                height: 92vh;
+                            }
+                            .Registrierung p {
+                                display: flex;
+                            }
+                            .Registrierung p label {
+                                width: 50%;
+                                text-align: right;
+                                padding-right: 10px;
+                            }
+                            .Registrierung p input {
+
+                            }
+                            footer {
+                                padding: 1%;
+                            }
+                            /**
+                Nav, general
+                **/
+
+
+
+                nav ul {
+                    list-style-type: none;
+                }
+
+                nav a {
+                    color: rgb(240,240,240);
+                    background-color: rgba(50,60,70,0.8);
+                }
+
+                nav a:hover {
+                    color: #fff;
+                    background-color: rgb(255,128,0);
+                }
+
+                /**
+                Nav, mobile
+                **/
+
+                #burger-icon {
+                    margin: 0 20px;
+                }
+
+                #burger-icon div {
+                    width: 30px;
+                    height: 5px;
+                    border-radius: 2px;
+                    background-color: rgba(150,160,170,0.9);
+                    margin: 3px 0 0 0;
+                }
+
+
+                #burger-icon:hover div {
+                    background-color: rgb(160,170,180);
+                }
+
+                #burger-icon:hover {
+                cursor: pointer;
+                    }
+
+                #mobile-nav ul {
+                    margin-top: 11px;
+                }
+
+                #mobile-nav ul li {
+                    margin-top: 1px;
+                }
+
+                #mobile-nav ul li a {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px 20px;
+                    font-size: 1em;
+                }
+
+
+                #mobile-nav {
+                    position: fixed;
+                    width: 100%;
+                    top: 0;
+                    height: 40px;
+                    padding-top: 5px;
+                    overflow-y: hidden;
+                    background-color: rgba(230,240,240,0.8);
+                }
+
+
+                /**
+                Nav, desktop
+                **/
+
+                #desktop-nav {
+                    position: fixed;
+                    top: 0;
+                }
+
+                #desktop-nav ul {
+                    display: flex;
+                }
+
+                #desktop-nav ul li a {
+                    padding: 3px 5px;
+                    margin-right: 2px;
+                }
+
+
+
+                /*
+                Responsive design, mobile first
+                */
+
+                @media only screen and (min-width: 600px) {
+
+
+                    /*
+                    Nav, desktop
+                    */
+
+                    #desktop-nav {
+                        display: block;
+                    }
+
+                    #mobile-nav {
+                        display: none;
+                    }
+
+                    /*
+                    Layout, desktop
+                    */
+
+                    body,
+                    section {
+                        padding-top: 4vw;
+                    }
+
+                    #desktop-nav ul,
+                    h1,h2,h3,
+                    p {
+                        padding: 0 10vw;
+                    }
+            </style>
+        </head>
+        <body>
+            <div class="Registrierung">
+                <header>
+                    <h1>Registrierung</h1>
+                </header>
+                <form class="form" method="get">
+                    <p>
+                        <label for="Nachname">Nachname:</label>
+                        <input
+                            type="text"
+                            id="nname"
+                            name="Nachname"
+                            required
+                        />
+                    </p>
+                    <p>
+                        <label for="Vorname">Vorname:</label>
+                        <input type="text" id="vname" name="Vorname" required />
+                    </p>
+                    <p>
+                        <label for="Benutzername">Benutzername:</label>
+                        <input
+                            type="text"
+                            id="bname"
+                            name="Benutzername"
+                            required
+                        />
+                    </p>
+                    <p>
+                        <label for="E-Mail">E-Mail:</label>
+                        <input type="text" id="email" name="E-Mail" required />
+                    </p>
+                    <p>
+                        <label for="Passwort">Passwort:</label>
+                        <input
+                            type="password"
+                            id="passwort"
+                            name="Passwort"
+                            required
+                        />
+                    </p>
+                    <p>
+                        <label for="Wiederholung Passwort"
+                            >Wiederholung Passwort:</label
+                        >
+                        <input
+                            type="password"
+                            id="passwortw"
+                            name="Passwort"
+                            required
+                        />
+                    </p>
+                    <p>
+                        <label for="AGB"
+                            >Bestätigen Sie den Verkauf Ihrer Seele!
+                            (AGB)</label
+                        >
+                        <input
+                            type="checkbox"
+                            name="Datenschutz"
+                            value="accept"
+                        />
+                    </p>
+                    <p>
+                        <label for="Datenschutz"
+                            >Ihre Seele wird durch die DSGVO beschützt (etwas).
+                            Bestätigen Sie! (Datenschutz)</label
+                        >
+                        <input
+                            type="checkbox"
+                            name="Datenschutz"
+                            value="accept"
+                        />
+                    </p>
+                    <p>
+                        <label for="Bestaetigung"
+                            >Seele nun verkaufen, 100% GRATIS!</label
+                        >
+                        <input
+                            type="submit"
+                            name="Seele nun verkaufen"
+                            value="Akzeptieren"
+                            href="login.html"
+                        />
+                    </p>
+                </form>
+            </div>
+            <footer>
+                <div class="Unternehmen">
+                    <h5>&copy Seelenschlachter GmbH 2019</h5>
+                </div>
+                <div class="Navigation">
+                    <ul>
+                        <li>
+                            <a
+                                href="#"
+                                oneclick="document.getElementById('mobile-nav').style.height='40px'"
+                                >Top</a
+                            >
+                        </li>
+                        <li><a href="login"></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </body>
+    </html>
 </html>
