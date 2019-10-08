@@ -4,171 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <head>
             <title>Übung 3</title>
-            <style>
-                            * {
-                                margin: 0;
-                                padding: 0;
-                                box-sizing: border-box;
-                            }
-                            body {
-                                font-family: sans-serif;
-                                color: lawngreen;
-
-                            }
-                            p {
-                                padding: 0,5%;
-                                align-items: stretch;
-                                align-content: center;
-                            }
-                            h1 {
-                                font-size: 15vw;
-                            }
-                            h5 {
-                                color: blue;
-                            }
-                            .Registrierung {
-                                height: 92vh;
-                            }
-                            .Registrierung p {
-                                display: flex;
-                            }
-                            .Registrierung p label {
-                                width: 50%;
-                                text-align: right;
-                                padding-right: 10px;
-                            }
-                            .Registrierung p input {
-
-                            }
-                            footer {
-                                padding: 1%;
-                            }
-                /**
-                Nav, general
-                **/
-
-
-
-                nav ul {
-                    list-style-type: none;
-                }
-
-                nav a {
-                    color: rgb(240,240,240);
-                    background-color: rgba(50,60,70,0.8);
-                }
-
-                nav a:hover {
-                    color: #fff;
-                    background-color: rgb(255,128,0);
-                }
-
-                /**
-                Nav, mobile
-                **/
-
-                #burger-icon {
-                    margin: 0 10px;
-                }
-
-                #burger-icon div {
-                    width: 30px;
-                    height: 5px;
-                    border-radius: 2px;
-                    background-color: rgba(150,160,170,0.9);
-                    margin: 3px 0 0 0;
-                }
-
-
-                #burger-icon:hover div {
-                    background-color: rgb(160,170,180);
-                }
-
-                #burger-icon:hover {
-                cursor: pointer;
-                    }
-
-                #mobile-nav ul {
-                    margin-top: 11px;
-                }
-
-                #mobile-nav ul li {
-                    margin-top: 1px;
-                }
-
-                #mobile-nav ul li a {
-                    display: inline-block;
-                    width: 100%;
-                    padding: 10px 20px;
-                    font-size: 1em;
-                }
-
-
-                #mobile-nav {
-                    position: fixed;
-                    width: 100%;
-                    top: 0;
-                    height: 40px;
-                    padding-top: 5px;
-                    overflow-y: hidden;
-                    background-color: rgba(230,240,240,0.8);
-                }
-
-
-                /**
-                Nav, desktop
-                **/
-
-                #desktop-nav {
-                    position: fixed;
-                    top: 0;
-                }
-
-                #desktop-nav ul {
-                    display: flex;
-                }
-
-                #desktop-nav ul li a {
-                    padding: 3px 5px;
-                    margin-right: 2px;
-                }
-
-
-
-                /*
-                Responsive design, mobile first
-                */
-
-                @media only screen and (min-width: 600px) {
-
-
-                    /*
-                    Nav, desktop
-                    */
-
-                    #desktop-nav {
-                        display: block;
-                    }
-
-                    #mobile-nav {
-                        display: none;
-                    }
-
-                    /*
-                    Layout, desktop
-                    */
-
-                    body,
-                    section {
-                        padding-top: 4vw;
-                    }
-
-                    #desktop-nav ul,
-                    h1,h2,h3,
-                    p {
-                        padding: 0 10vw;
-                    }
-            </style>
+            <link rel="stylesheet" href="css/style.css" />
         </head>
         <body>
             <div class="Registrierung">
@@ -262,7 +98,7 @@
                     <h5>&copy Seelenschlachter GmbH 2019</h5>
                 </div>
                 <nav>
-                    <section class="mobile-nav">
+                    <section id="mobile-nav">
                         <div id="burger-icon" onclick="toggleMobileNav()">
                             <div></div>
                             <div></div>
@@ -299,7 +135,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="desktop-nav">
+                    <section id="desktop-nav">
                         <ul>
                             <li><a href="#">Top</a></li>
                             <li><a href="index.html">Home</a></li>
