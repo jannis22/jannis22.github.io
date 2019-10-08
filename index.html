@@ -43,7 +43,7 @@
                             footer {
                                 padding: 1%;
                             }
-                            /**
+                /**
                 Nav, general
                 **/
 
@@ -261,18 +261,55 @@
                 <div class="Unternehmen">
                     <h5>&copy Seelenschlachter GmbH 2019</h5>
                 </div>
-                <div class="Navigation">
-                    <ul>
-                        <li>
-                            <a
-                                href="#"
-                                oneclick="document.getElementById('mobile-nav').style.height='40px'"
-                                >Top</a
-                            >
-                        </li>
-                        <li><a href="login"></a></li>
-                    </ul>
-                </div>
+                <nav>
+                    <section class="mobile-nav">
+                        <div id="burger-icon" onclick="toggleMobileNav()">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a
+                                    href="#"
+                                    onclick="document.getElementById('mobile-nav').style.height= '40px'"
+                                    >Top</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="home.html"
+                                    onclick="document.getElementById('mobile-nav').style.height= '40px'"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="registrierung.html"
+                                    onclick="document.getElementById('mobile-nav').style.height= '40px'"
+                                    >Registrierung</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="login.html"
+                                    onclick="document.getElementById('mobile-nav').style.height= '40px'"
+                                    >Login</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="desktop-nav">
+                        <ul>
+                            <li><a href="#">Top</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li>
+                                <a href="registrierung.html">Registrierung</a>
+                            </li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </section>
+                </nav>
             </footer>
         </body>
 
