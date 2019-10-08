@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Übung 3</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: sans-serif;
+                color: lawngreen;
+                
+            }
+            p {
+                padding: 0,5%;
+                align-items: stretch;
+                align-content: center;
+            }
+            h1 {
+                font-size: 15vw;
+            }
+            h5 {
+                color: gray;
+            }
+            .Registrierung {
+                height: 92vh;
+            }
+            .Registrierung p {
+                display: flex;
+            }
+            .Registrierung p label {
+                width: 50%;
+                text-align: right;
+                padding-right: 10px;
+            }
+            .Registrierung p input {
+                
+            }
+            footer {
+                padding: 1%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Registrierung">
+            <header>
+                <h1>Registrierung</h1>
+            </header>
+            <form class="form" method="get">
+            <p>
+                <label for="Nachname">Nachname:</label>
+                <input type="text" id="nname" name="Nachname" required />
+            </p>
+            <p>
+                <label for="Vorname">Vorname:</label>
+                <input type="text" id="vname" name="Vorname" required />
+            </p>
+            <p>
+                <label for="Benutzername">Benutzername:</label>
+                <input type="text" id="bname" name="Benutzername" required />
+            </p>
+            <p>
+                <label for="E-Mail">E-Mail:</label>
+                <input type="text" id="email" name="E-Mail" required />
+            </p>
+            <p>
+                <label for="Passwort">Passwort:</label>
+                <input type="password" id="passwort" name="Passwort" required />
+            </p>
+            <p>
+                <label for="Wiederholung Passwort"
+                    >Wiederholung Passwort:</label
+                >
+                <input
+                    type="password"
+                    id="passwortw"
+                    name="Passwort"
+                    required
+                />
+            </p>
+            <p>
+                <label for="AGB"
+                    >Bestätigen Sie den Verkauf Ihrer Seele! (AGB)</label
+                >
+                <input type="checkbox" name="Datenschutz" value="accept" />
+            </p>
+            <p>
+                <label for="Datenschutz"
+                    >Ihre Seele wird durch die DSGVO beschützt (etwas).
+                    Bestätigen Sie! (Datenschutz)</label
+                >
+                <input type="checkbox" name="Datenschutz" value="accept" />
+            </p>
+            <p>
+                <label for="Bestaetigung"
+                    >Seele nun verkaufen, 100% GRATIS!</label
+                >
+                <input
+                    type="submit"
+                    name="Seele nun verkaufen"
+                    value="Akzeptieren"
+                    href="login.html"
+                />
+            </p>
+            </form>
+        </div>
+        <footer>
+            <h5>&copy Seelenschlachter GmbH 2019</h5>
+        </footer>
+    </body>
+</html>
