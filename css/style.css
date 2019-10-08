@@ -101,7 +101,7 @@ Nav, mobile
 #mobile-nav {
     position: fixed;
     margin-right: 1%;
-    margin-left: 90%;
+    margin-left: 90vw;
     margin-bottom: 1%;
     width:;
     bottom: 0;
