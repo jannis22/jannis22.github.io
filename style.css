@@ -7,8 +7,9 @@ body {
     padding: 0;
     font-family: castellar;
     font-size: 16px;
+    background-color: dimgrey;
     background-image: url(img/gear-2291916_1920.jpg);
-    background-size: 180%;
+    background-size: 220%;
     background-repeat: no-repeat;
     background-position: center;
     color: #333;
@@ -21,11 +22,18 @@ a {
 h3 {
     color: white;
 }
+.titel {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1,5em;
+    list-style-type: none;
+}
 .button {
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
-    background: steelblue;
+    background: #262BC5;
     color: white;
     font-size: 12px;
     font-weight: bold;

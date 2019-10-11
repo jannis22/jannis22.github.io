@@ -61,8 +61,8 @@ var ShoppingCart = (function($) {
                              <div class="product-description"><span>Beschreibung:</span> ${item.description}</div>
                              <div class="product-price"><span>Preis:</span> ${item.price} €</div>
                              <div class="product-add-to-cart">
-                               <a href="#0" class="button see-more">More Details</a>
-                               <a href="#0" class="button add-to-cart" data-id=${item.id}>Add to Cart</a>
+                               <a href="#0" class="button see-more">Mehr Details</a>
+                               <a href="#0" class="button add-to-cart" data-id=${item.id}>Zum Warenkorb</a>
                              </div>
                           </div>
 `;
@@ -111,7 +111,7 @@ productsEl.appendChild(productEl);
     });
     
     emptyCartEl.addEventListener("click", function(event) {
-      if(confirm("Are you sure?")) {
+      if(confirm("Bist du dir sicher?")) {
         productsInCart = [];
       }
       generateCartList();
