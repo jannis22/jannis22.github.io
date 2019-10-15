@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- HTML 5 -->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JavaScript</title>
+        <meta name="description" content="Einleitungstext" />
+        <meta name="author" content="Jannis K" />
+        <meta name="revisit-after" content="7 days" />
+    </head>
+    <body>
+        <h1>JavaScript 3</h1>
+        
+        <button>self</button>
+        <div id="d1">self</div>
+        <div id="d2">self</div>
+        
+        
+        <script>
+            var b = document.querySelector("button");
+            var d1 = document.querySelector("#d1");
+            
+            function test(){
+                b.alert("geklickt");
+                b.style.backgroundColor = "blue";
+            }
+            
+            b.onclick = function(){ //anonyme Funktion
+                test();
+            }
+            d1.onmouseenter = function(){ //hover
+                this.style.backgroundColor ="blue";
+                b.style.backgroundColor = "transparent";
+                this.innerHTML = "tool";
+                this.style.color = "white";
+            }
+        </script>
+    </body>
+</html>
