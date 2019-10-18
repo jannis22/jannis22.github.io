@@ -1,0 +1,84 @@
+
+.galerie {
+    box-sizing: border-box;
+    background-color: silver;
+    background-image: linear-gradient(335deg, #b00 23px, transparent 23px), linear-gradient(155deg, #d00 23px, transparent 23px), linear-gradient(335deg, #b00 23px, transparent 23px), linear-gradient(155deg, #d00 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+    padding: 30px 0 140px 0;
+}
+    /* weitere Muster mit linear-gradient unter:   */
+
+    .galerie div {
+        background: #FFF;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        height: 225px;
+        margin: 0 0 20px 30px;
+        overflow: hidden;
+        padding: 0;
+        width: 225px;
+        -webkit-transition: all 0.25s ease-in;
+        /* für Safari 5.1, Android 2.3 bis 4.3 */
+        transition: all 0.25s ease-in;
+    }
+
+        .galerie div img {
+            width: 225px;
+            height: 225px;
+        }
+
+        .galerie div:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+            margin: -15px 0px 0 20px;
+            padding: 5px 5px 30px 5px;
+            width: 225px;
+            z-index: 2;
+            -webkit-transform: scale(2);
+            /* für Safari, Android */
+            -ms-transform: scale(2);
+            /* für IE9 */
+            transform: scale(2);
+        }
+
+
+
+        .galerie div:nth-child(3n-2):hover {
+            -webkit-transform: scale(2) rotate(-2.5deg);
+            /* für Safari, Android */
+            -ms-transform: scale(2) rotate(-2.5deg);
+            /* für IE9 */
+            transform: scale(2) rotate(-2.5deg);
+        }
+
+        .galerie div:nth-child(5n):hover {
+            -webkit-transform: scale(2) rotate(2deg);
+            -ms-transform: scale(2) rotate(2deg);
+            transform: scale(2) rotate(2.5deg);
+        }
+
+    .galerie:after {
+        clear: both;
+        content: " ";
+        display: block;
+    }
+
+@media only screen and (max-width: 1200px) {
+    body {
+        width: 100%;
+        margin: 2% 0;
+        padding: 5%;
+    }
+
+    .galerie {
+        width: 850px;
+        margin: 100px auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .galerie {
+        width: 100%;
+        margin: 100px auto;
+    }
+}
