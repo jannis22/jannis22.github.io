@@ -9,6 +9,11 @@
     <body>
         <header>
             <a href="menue.php" onclick="return myFunction();">Zurück zum Menü</a>
+            
+            <div class="angemeldetals">
+            <?php echo "Sie sind als: ".$_SESSION['user']." angemeldet." ?>
+            <a href="?logout=true">logout</a>
+            </div>
         </header>
         <div class="slideshow-container">
             <div class="mySlides fade">

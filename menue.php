@@ -7,6 +7,10 @@
 </head>
 <body>
     <h1>Slideshowmenü</h1>
+    <div class="angemeldetals">
+      <?php echo "Sie sind als: ".$_SESSION['user']." angemeldet." ?>
+      <a href="?logout=true">logout</a>
+      </div>
     <main>
         <h2>Bildergalerie</h2>
         <p>Klicken Sie auf die gewünschte Galerie</p>

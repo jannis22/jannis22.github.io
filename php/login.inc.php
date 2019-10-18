@@ -8,5 +8,9 @@ if(isset($_POST['n']) && $_POST['n'] != "") {
     exit;
 }
 
+if(isset($_SESSION['user'])) {
+    header("Location: menue.php");
+}
+
 
 ?>
